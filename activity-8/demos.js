@@ -1,5 +1,6 @@
 console.log("=== ASYNC DEMO ===");
 
+
 // setTimeout
 console.log("1");
 setTimeout(() => {
