@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activity 6: Interactive To-Do List (Part 2)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1>Activity 6: Interactive To-Do List (Enhanced)</h1>
+
+  <div class="todo-container">
+
+    <div class="input-section">
+      <h2>Add New Task</h2>
+
+      <div class="input-controls">
+        <input id="taskInput" type="text" placeholder="Enter your task..." />
+
+        <select id="prioritySelect">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <button id="addTaskBtn">Add Task</button>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="pending">Pending</button>
+      <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <div id="emptyState">No tasks yet</div>
+
+    <button id="markAllDoneBtn">Mark All Done</button>
+    <button id="deleteCompletedBtn">Delete Completed</button>
+    <button id="clearAllBtn">Clear All</button>
+
+    <div id="taskStats"></div>
+
+  </div>
+
+  <script src="demos.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
