@@ -1,0 +1,114 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.form-container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Valid state */
+input.valid,
+textarea.valid {
+  border-color: #28a745;
+}
+
+/* Invalid state */
+input.invalid,
+textarea.invalid {
+  border-color: #dc3545;
+}
+
+/* Error messages */
+.error-message {
+  display: none;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #dc3545;
+}
+
+.error-message.show {
+  display: block;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Success message */
+#formSuccess {
+  margin-top: 15px;
+  padding: 10px;
+  background: #d4edda;
+  color: #155724;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+}
